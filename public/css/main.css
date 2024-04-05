@@ -1,0 +1,386 @@
+/* mobile width < 740px */
+.nav-mobile {
+    display: none;
+}
+
+.mobile-slider {
+    display: none;
+}
+
+.desktop-slider {
+    display: block;
+}
+
+.header-top-mobile {
+    display: none;
+}
+
+.bussiness-text {
+    display: none;
+}
+
+.siderbar-mobile-products {
+    width: 21%;
+}
+
+.the-new-footer .tnf-links h3 {
+    font-size: 20px;
+}
+
+#sliderContainer {
+    display: none;
+}
+
+/* .tnf-sns a {
+    flex: 0 0 calc(50% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
+} */
+
+@media only screen and (max-width: 46.1875em) {
+
+    /* .tnf-sns a {
+        flex-basis: 100%;
+    } */
+    .header-container {
+        background-size: auto !important;
+    }
+
+    .banner-content {
+        height: auto;
+    }
+
+    .mobile-slider {
+        display: block;
+    }
+
+    #sliderContainer {
+        display: block;
+    }
+
+    .desktop-slider {
+        display: none;
+    }
+
+    .bussiness-text {
+        display: block;
+    }
+
+    .register-container {
+        width: auto !important;
+    }
+
+    .btn-search {
+        width: auto !important;
+    }
+
+    .nav-mobile {
+        display: block;
+        z-index: 1000;
+    }
+
+    .header-top {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-mobile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-top-mobile {
+        display: block;
+        /* background-color: transparent !important; */
+    }
+
+    #header-nav-bottom {
+        display: none;
+    }
+
+    .industry-category-wrapper h2 {
+        width: 100% !important;
+    }
+
+    .discover-box {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .category-number {
+        width: 100% !important;
+    }
+
+    #the-new-footer {
+        padding: 10px !important;
+    }
+
+    .nav-wrapper-container {
+        height: 100% !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .home-dot-element {
+        width: 100% !important;
+        transform: scale(0.80);
+    }
+
+    .Streamline-box {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .Streamline-item {
+        padding: 12px;
+    }
+
+    .Streamline-text {
+        width: 90% !important;
+    }
+
+    .full-link_item_wrapper li {
+        width: 100% !important;
+    }
+
+    .header-nav-desktop {
+        display: none;
+    }
+
+    #search-all {
+        width: 21rem !important;
+        transform: scale(0.88);
+    }
+
+    .siderbar-mobile-products {
+        display: none;
+    }
+
+    .container-item {
+        flex-direction: column;
+    }
+
+    .list-item {
+        width: 100% !important;
+    }
+
+    .main-right {
+        width: 100% !important;
+    }
+
+    .siderbar-container {
+        display: block !important;
+    }
+
+    .main-checkout {
+        flex-direction: column;
+    }
+
+    .login-container {
+        margin: 12px;
+        right: 0 !important;
+    }
+
+    .login-form {
+        width: auto !important;
+    }
+
+    .btn-text-search {
+        display: none;
+    }
+
+    .checkout-success-box {
+        margin: 0 !important;
+    }
+}
+
+
+/* tablet width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+    .nav-mobile {
+        display: block;
+        z-index: 1000;
+    }
+
+    .header-container {
+        background-size: auto !important;
+    }
+
+    .mobile-slider {
+        display: block;
+    }
+
+    .desktop-slider {
+        display: none;
+    }
+
+    #sliderContainer {
+        display: block;
+    }
+
+    .btn-search {
+        width: auto !important;
+    }
+
+    .bussiness-text {
+        display: block;
+    }
+
+    .btn-text-search {
+        display: none;
+    }
+
+    .checkout-success-box {
+        margin: 0 !important;
+    }
+
+    .register-container {
+        width: auto !important;
+    }
+
+    .header-top {
+        display: none !important;
+    }
+
+    .discover-box {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .header-top-mobile {
+        display: block;
+        /* background-color: transparent !important; */
+    }
+
+    .header-bottom {
+        flex-direction: column;
+    }
+
+    .logo-mobile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-mobile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-top-mobile {
+        display: block;
+        /* background-color: transparent !important; */
+    }
+
+    #header-nav-bottom {
+        display: none;
+    }
+
+    .industry-category-wrapper h2 {
+        width: 100% !important;
+    }
+
+    .discover-box {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .category-number {
+        width: 100% !important;
+    }
+
+    #the-new-footer {
+        padding: 10px !important;
+    }
+
+    .nav-wrapper-container {
+        height: 100% !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .home-dot-element {
+        width: 100% !important;
+        transform: scale(0.80);
+    }
+
+    .Streamline-box {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .Streamline-item {
+        padding: 12px;
+    }
+
+    .Streamline-text {
+        width: 90% !important;
+    }
+
+    .full-link_item_wrapper li {
+        width: 100% !important;
+    }
+
+    .header-nav-desktop {
+        display: none;
+    }
+
+    #search-all {
+        width: 21rem !important;
+        transform: scale(0.88);
+        padding: 7px;
+        height: 3rem;
+        gap: 10px;
+    }
+
+    #search-all .btn-search {
+        width: auto !important;
+        padding: 7px;
+    }
+
+    .discover-item {
+        width: 100% !important;
+    }
+
+    .siderbar-mobile-products {
+        display: none;
+    }
+
+    .container-item {
+        flex-direction: column;
+    }
+
+    .list-item {
+        width: 100% !important;
+    }
+
+    .main-right {
+        width: 100% !important;
+    }
+
+    .siderbar-container {
+        display: block !important;
+    }
+
+    .main-checkout {
+        flex-direction: column;
+    }
+
+    .login-container {
+        margin: 12px;
+        right: 0 !important;
+    }
+}
+
+
+
+/* tablet width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #search-all {
+        width: 24rem !important;
+        transform: scale(0.88);
+    }
+}
