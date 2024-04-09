@@ -78,7 +78,7 @@
 
     </div>
     <div class="industry-category-wrapper px-10 pt-28">
-        <div class="category-info flex grow gap-2 discover-box">
+        <div class="category-info flex grow gap-2 explore-box">
             <h2 class="text-4xl w-3/5">Explore millions of offerings tailored to your business needs</h2>
             <div class="category-number grid grid-cols-2 gap-4 w-500">
                 <div class="number-item"><span>200M+</span>
@@ -191,169 +191,221 @@
     <div class="md:px-10 sm:px-4" style="background: #e5e7eb;">
         <div class="md:pt-20 md:pb-20 p-2">
             <h2 class="mb-10 font-semibold text-4xl">Discover your next business opportunity</h2>
-            <div class="flex justify-around discover-box">
-                <div style="width: 379px;" class=" discover-item ">
-                    <div class="flex justify-between mb-2 items-center">
-                        <h3 class="font-semibold text-2xl">Top ranking</h3>
-                        <a class="text-base">view more</a>
-                    </div>
-                    <div class="w-full h-full">
-                        <div class="w-full h-full">
-                            <div class="rounded-3xl" style="padding: 10px; background: #fff;">
-                                <div style=" height: 100%;">
-                                    <div>
-                                        <h3 class="text-base">Top ranking</h3>
-                                        <a class="text-base font-normal">view more</a>
-                                    </div>
-                                    <div class="w-full">
-                                        <section class="lazy slider w-11/12 m-auto" data-sizes="50vw">
-                                            <div>
-                                                <img
-                                                    src="https://s.alicdn.com/@sc04/kf/H77ada9ed4d1c4588a26274a4d0f55722x.jpg_350x350.jpg">
-                                                <div class="flex items-center gap-2 justify-between mt-4 mb-4">
-                                                    <div class="rounded-3xl"
-                                                        style="width: 105px; height: 105px;background: #dfdfdf;">
-                                                        1
-                                                    </div>
-                                                    <div class="rounded-3xl"
-                                                        style="width: 105px; height: 105px;background: #dfdfdf;">
-                                                        2
-                                                    </div>
-                                                    <div class="rounded-3xl"
-                                                        style="width: 105px; height: 105px;background: #dfdfdf;">
-                                                        3
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img data-lazy="https://via.placeholder.com/350x300?text=2-350w"
-                                                    data-srcset="https://via.placeholder.com/650x300?text=2-650w 650w, https://via.placeholder.com/960x300?text=2-960w 960w"
-                                                    data-sizes="100vw">
-                                            </div>
-                                            <div>
-                                                <img data-lazy="https://via.placeholder.com/350x300?text=3-350w"
-                                                    data-srcset="https://via.placeholder.com/650x300?text=3-650w 650w, https://via.placeholder.com/960x300?text=3-960w 960w"
-                                                    data-sizes="100vw">
-                                            </div>
-                                            <div>
-                                                <img data-lazy="https://via.placeholder.com/350x300?text=4-350w"
-                                                    data-srcset="https://via.placeholder.com/650x300?text=4-650w 650w, https://via.placeholder.com/960x300?text=4-960w 960w"
-                                                    data-sizes="100vw">
-                                            </div>
-                                            <div>
-                                                <img data-lazy="https://via.placeholder.com/350x300?text=5-350w"
-                                                    data-srcset="https://via.placeholder.com/650x300?text=5-650w 650w, https://via.placeholder.com/960x300?text=5-960w 960w"
-                                                    data-sizes="100vw">
-                                            </div>
-                                            <div>
-                                                <!-- this slide should inherit the sizes attr from the parent slider -->
-                                                <img data-lazy="https://via.placeholder.com/350x300?text=6-350w"
-                                                    data-srcset="https://via.placeholder.com/650x300?text=6-650w 650w, https://via.placeholder.com/960x300?text=6-960w 960w">
-                                            </div>
-                                        </section>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
+             <div class="slider-container mobile-slider">
+                <section class="lazy slider" data-sizes="50vw">
+                    <div style="width: 379px;" >
+                        <div class="flex justify-between mb-2 items-center">
+                            <h3 class="font-semibold text-2xl">Top ranking</h3>
+                            <a class="text-base">view more</a>
                         </div>
-
-                    </div>
-                </div>
-                <div style="width: 379px;" class=" discover-item ">
-                    <div class="flex justify-between mb-2 items-center">
-                        <h3 class="font-semibold text-2xl">Top ranking</h3>
-                        <a class="text-base">view more</a>
-                    </div>
-                    <div class="w-full h-full">
-                        <div class="w-full h-full">
-                            <div>
-                                <div class="rounded-3xl" style="padding: 10px; background: #fff;">
-                                    <div>
-                                        <h3 class="text-base">71,000,000 product today</h3>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="category-number grid grid-cols-2 gap-4">
-                                            <div class="rounded-3xl category-number-1"
-                                                style="width: 161px; height: 161px; ">
-
-                                            </div>
-                                            <div class="rounded-3xl category-number-2"
-                                                style="width: 161px; height: 161px; ">
-
-                                            </div>
-                                            <div class="rounded-3xl category-number-3"
-                                                style="width: 161px; height: 161px; ">
-
-                                            </div>
-                                            <div class="rounded-3xl category-number-4"
-                                                style="width: 161px; height: 161px; ">
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                                <div class=" w-full p-4 mt-4 rounded-3xl" style="background: #fff;">
-                                    <div class="flex  items-center justify-center space-x-4 text-left">
-                                        <div style="width: 111px; height: 111px; flex-shrink: 0;">
-                                            <img class="w-full h-full rounded-3xl"
-                                                src="https://s.alicdn.com/@sc04/kf/Hc7a62fd47f314fa09ffaa05ea0a57cba6.jpg_350x350.jpg">
-                                        </div>
-                                        <div>
-                                            <h2>New this week</h2>
-                                            <p>Products from Verified Suppliers only</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div style="width: 379px;" class=" discover-item">
-                    <div class="flex justify-between mb-2 items-center">
-                        <h3 class="font-semibold text-2xl">Top ranking</h3>
-                        <a class="text-base">view more</a>
-                    </div>
-                    <div class=" w-full p-4 mt-4 mb-2 rounded-3xl" style="background: #fff;">
-                        <div class="flex items-center  justify-center space-x-4 text-left">
-                            <div style="width: 111px; height: 111px; flex-shrink: 0;">
-                                <img class="w-full h-full rounded-3xl"
-                                    src="https://s.alicdn.com/@sc04/kf/Hc7a62fd47f314fa09ffaa05ea0a57cba6.jpg_350x350.jpg">
-                            </div>
-                            <div>
-                                <h2>New this week</h2>
-                                <p>Products from Verified Suppliers only</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 379px;" class=" discover-item ">
                         <div class="w-full h-full">
                             <div class="w-full h-full">
                                 <div class="rounded-3xl" style="padding: 10px; background: #fff;">
                                     <div style=" height: 100%;">
                                         <div>
-                                            <h3 class="text-base text-lg font-medium leading-6 mb-2">Deals on
-                                                best sellers</h3>
+                                            <h3 class="text-base">Top ranking</h3>
+                                            <a class="text-base font-normal">view more</a>
                                         </div>
                                         <div class="w-full">
-                                            <section class=" w-11/12 m-auto">
+                                            <section class="lazy slider w-11/12 m-auto" data-sizes="50vw">
                                                 <div>
-                                                    <img class="rounded-3xl"
-                                                        src="https://s.alicdn.com/@sc04/kf/H978339f25bdd48c9a3b9ec02ccda0a61K.jpg_350x350.jpg">
-
+                                                    <img
+                                                        src="https://s.alicdn.com/@sc04/kf/H77ada9ed4d1c4588a26274a4d0f55722x.jpg_350x350.jpg">
+                                                    <div class="flex items-center gap-2 justify-between mt-4 mb-4">
+                                                        <div class="rounded-3xl"
+                                                            style="width: 105px; height: 105px;background: #dfdfdf;">
+                                                            1
+                                                        </div>
+                                                        <div class="rounded-3xl"
+                                                            style="width: 105px; height: 105px;background: #dfdfdf;">
+                                                            2
+                                                        </div>
+                                                        <div class="rounded-3xl"
+                                                            style="width: 105px; height: 105px;background: #dfdfdf;">
+                                                            3
+                                                        </div>
+                                                    </div>
                                                 </div>
-
+                                                <div>
+                                                    <img data-lazy="https://via.placeholder.com/350x300?text=2-350w"
+                                                        data-srcset="https://via.placeholder.com/650x300?text=2-650w 650w, https://via.placeholder.com/960x300?text=2-960w 960w"
+                                                        data-sizes="100vw">
+                                                </div>
+                                                <div>
+                                                    <img data-lazy="https://via.placeholder.com/350x300?text=3-350w"
+                                                        data-srcset="https://via.placeholder.com/650x300?text=3-650w 650w, https://via.placeholder.com/960x300?text=3-960w 960w"
+                                                        data-sizes="100vw">
+                                                </div>
+                                                <div>
+                                                    <img data-lazy="https://via.placeholder.com/350x300?text=4-350w"
+                                                        data-srcset="https://via.placeholder.com/650x300?text=4-650w 650w, https://via.placeholder.com/960x300?text=4-960w 960w"
+                                                        data-sizes="100vw">
+                                                </div>
+                                                <div>
+                                                    <img data-lazy="https://via.placeholder.com/350x300?text=5-350w"
+                                                        data-srcset="https://via.placeholder.com/650x300?text=5-650w 650w, https://via.placeholder.com/960x300?text=5-960w 960w"
+                                                        data-sizes="100vw">
+                                                </div>
+                                                <div>
+                                                    <!-- this slide should inherit the sizes attr from the parent slider -->
+                                                    <img data-lazy="https://via.placeholder.com/350x300?text=6-350w"
+                                                        data-srcset="https://via.placeholder.com/650x300?text=6-650w 650w, https://via.placeholder.com/960x300?text=6-960w 960w">
+                                                </div>
+                                            </section>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div style="width: 379px;" >
+                        <div class="flex justify-between mb-2 items-center">
+                            <h3 class="font-semibold text-2xl">Top ranking</h3>
+                            <a class="text-base">view more</a>
+                        </div>
+                        <div class="w-full h-full">
+                            <div class="w-full h-full">
+                                <div>
+                                    <div class="rounded-3xl" style="padding: 10px; background: #fff;">
+                                        <div>
+                                            <h3 class="text-base">71,000,000 product today</h3>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="category-number grid grid-cols-2 gap-4">
+                                                <div class="rounded-3xl category-number-1"
+                                                    style="width: 161px; height: 161px; ">
+    
+                                                </div>
+                                                <div class="rounded-3xl category-number-2"
+                                                    style="width: 161px; height: 161px; ">
+    
+                                                </div>
+                                                <div class="rounded-3xl category-number-3"
+                                                    style="width: 161px; height: 161px; ">
+    
+                                                </div>
+                                                <div class="rounded-3xl category-number-4"
+                                                    style="width: 161px; height: 161px; ">
+    
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+    
+                                    </div>
+                                    <div class=" w-full p-4 mt-4 rounded-3xl" style="background: #fff;">
+                                        <div class="flex  items-center justify-center space-x-4 text-left">
+                                            <div style="width: 111px; height: 111px; flex-shrink: 0;">
+                                                <img class="w-full h-full rounded-3xl"
+                                                    src="https://s.alicdn.com/@sc04/kf/Hc7a62fd47f314fa09ffaa05ea0a57cba6.jpg_350x350.jpg">
+                                            </div>
+                                            <div>
+                                                <h2>New this week</h2>
+                                                <p>Products from Verified Suppliers only</p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+    
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                    <div style="width: 379px;">
+                        <div class="flex justify-between mb-2 items-center">
+                            <h3 class="font-semibold text-2xl">Top ranking</h3>
+                            <a class="text-base">view more</a>
+                        </div>
+                        <div class=" w-full p-4 mt-4 mb-2 rounded-3xl" style="background: #fff;">
+                            <div class="flex items-center  justify-center space-x-4 text-left">
+                                <div style="width: 111px; height: 111px; flex-shrink: 0;">
+                                    <img class="w-full h-full rounded-3xl"
+                                        src="https://s.alicdn.com/@sc04/kf/Hc7a62fd47f314fa09ffaa05ea0a57cba6.jpg_350x350.jpg">
+                                </div>
+                                <div>
+                                    <h2>New this week</h2>
+                                    <p>Products from Verified Suppliers only</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div  >
+                            <div class="w-full h-full">
+                                <div class="w-full h-full">
+                                    <div class="rounded-3xl" style="padding: 10px; background: #fff;">
+                                        <div style=" height: 100%;">
+                                            <div>
+                                                <h3 class="text-base text-lg font-medium leading-6 mb-2">Deals on
+                                                    best sellers</h3>
+                                            </div>
+                                            <div class="w-full">
+                                                <section class=" w-11/12 m-auto">
+                                                    <div>
+                                                        <img class="rounded-3xl"
+                                                            src="https://s.alicdn.com/@sc04/kf/H978339f25bdd48c9a3b9ec02ccda0a61K.jpg_350x350.jpg">
+    
+                                                    </div>
+    
+                                                </section>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+    
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="desktop-slider">
+                <div class="flex justify-around discover-box ">
+                    <div style="width: 379px;" >
+                        <div class="flex justify-between mb-2 items-center">
+                            <h3 class="font-semibold text-2xl">Top ranking</h3>
+                            <a class="text-base">view more</a>
+                        </div>
+                        <div class="w-full h-full">
+                            <div class="w-full h-full">
+                                <div class="rounded-3xl" style="padding: 10px; background: #fff;">
+                                    <div style=" height: 100%;">
+                                        <div>
+                                            <h3 class="text-base">Top ranking</h3>
+                                            <a class="text-base font-normal">view more</a>
+                                        </div>
+                                        <div class="w-full">
+                                            <section class="lazy slider w-11/12 m-auto" data-sizes="50vw">
+                                                <div>
+                                                    <img
+                                                        src="https://s.alicdn.com/@sc04/kf/H77ada9ed4d1c4588a26274a4d0f55722x.jpg_350x350.jpg">
+                                                    <div class="flex items-center gap-2 justify-between mt-4 mb-4">
+                                                        <div class="rounded-3xl"
+                                                            style="width: 105px; height: 105px;background: #dfdfdf;">
+                                                            1
+                                                        </div>
+                                                        <div class="rounded-3xl"
+                                                            style="width: 105px; height: 105px;background: #dfdfdf;">
+                                                            2
+                                                        </div>
+                                                        <div class="rounded-3xl"
+                                                            style="width: 105px; height: 105px;background: #dfdfdf;">
+                                                            3
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
                                             </section>
                                         </div>
 
@@ -366,6 +418,111 @@
 
                         </div>
                     </div>
+                    <div style="width: 379px;" >
+                        <div class="flex justify-between mb-2 items-center">
+                            <h3 class="font-semibold text-2xl">Top ranking</h3>
+                            <a class="text-base">view more</a>
+                        </div>
+                        <div class="w-full h-full">
+                            <div class="w-full h-full">
+                                <div>
+                                    <div class="rounded-3xl" style="padding: 10px; background: #fff;">
+                                        <div>
+                                            <h3 class="text-base">71,000,000 product today</h3>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="category-number grid grid-cols-2 gap-4">
+                                                <div class="rounded-3xl category-number-1"
+                                                    style="width: 161px; height: 161px; ">
+
+                                                </div>
+                                                <div class="rounded-3xl category-number-2"
+                                                    style="width: 161px; height: 161px; ">
+
+                                                </div>
+                                                <div class="rounded-3xl category-number-3"
+                                                    style="width: 161px; height: 161px; ">
+
+                                                </div>
+                                                <div class="rounded-3xl category-number-4"
+                                                    style="width: 161px; height: 161px; ">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class=" w-full p-4 mt-4 rounded-3xl" style="background: #fff;">
+                                        <div class="flex  items-center justify-center space-x-4 text-left">
+                                            <div style="width: 111px; height: 111px; flex-shrink: 0;">
+                                                <img class="w-full h-full rounded-3xl"
+                                                    src="https://s.alicdn.com/@sc04/kf/Hc7a62fd47f314fa09ffaa05ea0a57cba6.jpg_350x350.jpg">
+                                            </div>
+                                            <div>
+                                                <h2>New this week</h2>
+                                                <p>Products from Verified Suppliers only</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div style="width: 379px;" >
+                        <div class="flex justify-between mb-2 items-center">
+                            <h3 class="font-semibold text-2xl">Top ranking</h3>
+                            <a class="text-base">view more</a>
+                        </div>
+                        <div class=" w-full p-4 mt-4 mb-2 rounded-3xl" style="background: #fff;">
+                            <div class="flex items-center  justify-center space-x-4 text-left">
+                                <div style="width: 111px; height: 111px; flex-shrink: 0;">
+                                    <img class="w-full h-full rounded-3xl"
+                                        src="https://s.alicdn.com/@sc04/kf/Hc7a62fd47f314fa09ffaa05ea0a57cba6.jpg_350x350.jpg">
+                                </div>
+                                <div>
+                                    <h2>New this week</h2>
+                                    <p>Products from Verified Suppliers only</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="w-full h-full">
+                                <div class="w-full h-full">
+                                    <div class="rounded-3xl" style="padding: 10px; background: #fff;">
+                                        <div style=" height: 100%;">
+                                            <div>
+                                                <h3 class="text-base text-lg font-medium leading-6 mb-2">Deals on
+                                                    best sellers</h3>
+                                            </div>
+                                            <div class="w-full">
+                                                <section class=" w-11/12 m-auto">
+                                                    <div>
+                                                        <img class="rounded-3xl"
+                                                            src="https://s.alicdn.com/@sc04/kf/H978339f25bdd48c9a3b9ec02ccda0a61K.jpg_350x350.jpg">
+
+                                                    </div>
+
+                                                </section>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -375,7 +532,7 @@
             <h2 class="mb-10 font-semibold text-4xl">Source direct-from-factory</h2>
             <div class="slider-container mobile-slider">
                 <section class="lazy slider" data-sizes="50vw">
-                    <div style="width: 379px; height: 379px;" class="discover-item rounded-3xl relative img-factory">
+                    <div style="width: 379px; height: 379px;" class="rounded-3xl relative img-factory">
                         <div class="p-4">
                             <div class="flex items-center gap-2 absolute top-8 rounded-2xl p-2" style="background: #fff">
                                 <span class="material-symbols-outlined">
@@ -390,7 +547,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width: 379px; height: 379px; " class="discover-item rounded-3xl relative img-factory-1">
+                    <div style="width: 379px; height: 379px; " class="rounded-3xl relative img-factory-1">
                         <div class="p-4">
                             <div class="flex items-center gap-2 absolute top-8 rounded-2xl p-2" style="background: #fff">
                                 <a>Get sample</a>
@@ -403,7 +560,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width: 379px; height: 379px; " class="discover-item rounded-3xl relative img-factory-2">
+                    <div style="width: 379px; height: 379px; " class=" rounded-3xl relative img-factory-2">
                         <div class="p-4">
                             <div class="flex items-center gap-2 absolute top-8 rounded-2xl p-2" style="background: #fff">
                                 <a>Connect with top-ranking</a>
@@ -420,7 +577,7 @@
             </div>
             <div class="desktop-slider">
                 <div class="flex gap-8 justify-center discover-box">
-                <div style="width: 379px; height: 379px;" class="discover-item rounded-3xl relative img-factory">
+                <div style="width: 379px; height: 379px;" class=" rounded-3xl relative img-factory">
                     <div class="p-4">
                         <div class="flex items-center gap-2 absolute top-8 rounded-2xl p-2" style="background: #fff">
                             <span class="material-symbols-outlined">
@@ -435,7 +592,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="width: 379px; height: 379px; " class="discover-item rounded-3xl relative img-factory-1">
+                <div style="width: 379px; height: 379px; " class=" rounded-3xl relative img-factory-1">
                     <div class="p-4">
                         <div class="flex items-center gap-2 absolute top-8 rounded-2xl p-2" style="background: #fff">
                             <a>Get sample</a>
@@ -448,7 +605,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="width: 379px; height: 379px; " class="discover-item rounded-3xl relative img-factory-2">
+                <div style="width: 379px; height: 379px; " class=" rounded-3xl relative img-factory-2">
                     <div class="p-4">
                         <div class="flex items-center gap-2 absolute top-8 rounded-2xl p-2" style="background: #fff">
                             <a>Connect with top-ranking</a>
@@ -468,7 +625,7 @@
         </div>
     </div>
     <div class="security-floor">
-        <div class="md:px-20 px-4 Streamline-item" style="margin: 120px auto;">
+        <div class="md:px-20 px-4 Streamline-item">
             <h2 class="mb-24 font-semibold text-4xl">Trade with confidence from production quality to purchase
                 protection
             </h2>
@@ -502,13 +659,13 @@
             </div>
         </div>
     </div>
-    <div class="Streamline">
-        <div class="md:px-20 px-4 Streamline-item" style="margin: 120px auto;">
+    <div class="Streamline p-6">
+        <div class="md:px-20 px-4 Streamline-item" >
             <div class="Streamline-text text-gray-800 overflow-hidden overflow-ellipsis whitespace-nowrap font-semibold text-4xl leading-13 mt-120"
                 style="width: 800px;">Streamline ordering from search to</br> fulfillment, all in one place
             </div>
 
-            <div class="grid grid-cols-2 gap-24 place-items-center Streamline-box">
+            <div class="grid grid-cols-2 place-items-center Streamline-box">
                 <ul class="full-link_item_wrapper relative z-1">
                     <li class="full-link_item full-link_item_enter flex items-center gap-2.5 ">
                         <div class="full-link_icon_wrapper rounded-full flex-shrink-0"
@@ -655,7 +812,7 @@
         </div>
     </div>
     <div>
-        <div>
+        <div class="p-6">
             <div class="text-4xl font-semibold leading-13 mx-auto mt-120 text-center md:w-3/5 w-4/5">Get tailored
                 discounts, services, and tools for your business stage.</div>
             <div class="text-lg leading-7 mx-auto mt-2 text-gray-600 text-center md:w-3/5">

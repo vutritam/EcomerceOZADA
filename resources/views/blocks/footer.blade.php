@@ -4,7 +4,7 @@ class="bg-white border-t border-gray-300 text-gray-700 text-base leading-6 pt-4 
     <div class="tnf-links flex justify-between discover-box " data-tnh-auto-exp="tnf-links" data-aplus-ae="x20_18d638f5"
         data-spm-anchor-id="a2700.product_home_newuser.0.i0.2ce267af8Rlo31">
         <div class="get-support">
-            <h3 class="font-bold">Get support</h3>
+            <h5 class="font-bold">Get support</h5>
             <ul>
                 <li><a href="https://service.alibaba.com/page/home?pageId=122" target="_blank">Help
                         Center</a></li>
@@ -19,7 +19,7 @@ class="bg-white border-t border-gray-300 text-gray-700 text-base leading-6 pt-4 
             </ul>
         </div>
         <div class="ta">
-            <h3 class="font-bold">Trade Assurance</h3>
+            <h5 class="font-bold">Trade Assurance</h5>
             <ul>
                 <li><a href="https://tradeassurance.alibaba.com/ta/Payment.htm" target="_blank">Safe
                         and easy payments</a></li>
@@ -34,7 +34,7 @@ class="bg-white border-t border-gray-300 text-gray-700 text-base leading-6 pt-4 
             </ul>
         </div>
         <div class="source">
-            <h3 class="font-bold">Source on Alibaba.com</h3>
+            <h5 class="font-bold">Source on Alibaba.com</h5>
             <ul>
                 <li><a href="https://rfq.alibaba.com/rfq/exhibition.htm?spm=a2700.product_home_l0.0.0.2ce267afzgonXG&amp;tracelog=footer_rfq"
                         target="_blank">Request for Quotation</a></li>
@@ -49,7 +49,7 @@ class="bg-white border-t border-gray-300 text-gray-700 text-base leading-6 pt-4 
             </ul>
         </div>
         <div class="sell-on-ali">
-            <h3 class="font-bold">Sell on Alibaba.com</h3>
+            <h5 class="font-bold">Sell on Alibaba.com</h5>
             <ul>
                 <li><a href="https://seller.alibaba.com/how-to-sell?spm=a2700.product_home_l0.0.0.2ce267afzgonXG&amp;tracelog=footer_sell_train&amp;language=en_US&amp;tenantId=US"
                         target="_blank">Start selling</a></li>
@@ -63,7 +63,7 @@ class="bg-white border-t border-gray-300 text-gray-700 text-base leading-6 pt-4 
             </ul>
         </div>
         <div class="get-to-know-us">
-            <h3 class="font-bold">Get to know us</h3>
+            <h5 class="font-bold">Get to know us</h5>
             <ul>
                 <li><a href="https://activities.alibaba.com/alibaba/following-about-alibaba.php"
                         target="_blank">About Alibaba.com</a></li>

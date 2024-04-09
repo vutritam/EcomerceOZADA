@@ -132,7 +132,7 @@
         justify-content: space-between;
         align-items: center;
         width: 95%;
-        margin: 4px auto;
+        margin: 0 auto;
     }
 
     .header-nav ul {
@@ -147,7 +147,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         width: 14%;
-        height: 43%;
+        height: 34%;
         background-size: cover;
     }
 
@@ -725,6 +725,12 @@
     max-width: 100px; /* Thiết lập độ rộng tối thiểu cho mỗi phần tử con */
     flex: 0 0 auto; /* Không co giãn hoặc co lại phần tử con */
 }
+.toast-container {
+    position: fixed;
+    top: 62px; /* Thay đổi giá trị top tùy theo vị trí mong muốn */
+    right: 10px; /* Thay đổi giá trị right tùy theo vị trí mong muốn */
+    z-index: 10000; /* Đảm bảo Toasty nằm trên tất cả các phần tử khác */
+  }
 
 </style>
 
@@ -734,6 +740,7 @@
     @include('blocks.header')
     <main>
         @include('blocks.navMobile')
+        @include('blocks.toasty')
         @yield('content')
     </main>
     @include('blocks.footer')
@@ -752,6 +759,11 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript">
         $(document).on('ready', function () {
+            // Lấy tham chiếu đến thông báo Toasty
+        var myToast = document.getElementById('myToast');
+
+        // Kích hoạt thông báo Toasty
+        var toast = new bootstrap.Toast(myToast);
                 // When input is focused
         $('#searchInput-mobile').focus(function() {
             $('#searchDropdown-mobile').removeClass('hidden');
@@ -1037,7 +1049,10 @@
                     // Cập nhật UI
                     $('#loading-overlay').show();
                     if(response.status) {
-                        alert('Tạo đơn hàng thành công');
+                        var toastBody = myToast.querySelector('.toast-body');
+                            // Cập nhật nội dung mới
+                            toastBody.innerHTML = 'Tạo đơn hàng thành công!';
+                            toast.show()
                         var html = '<div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4" role="alert">';
                             html += '<div class="flex">';
                             html += '<div class="py-1"><svg class="fill-current h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 13V9a1 1 0 112 0v4a1 1 0 11-2 0zm1-10a7 7 0 110 14 7 7 0 010-14z"/></svg></div>';
@@ -1199,6 +1214,7 @@
 
             
         });
+
         $('#addCartContainer').on('click', '.addToCartBtn', function() {
                 var Id = $('#product-detail-id').data('product_id');
                 var quantity= $('#quantity').val();
@@ -1210,7 +1226,11 @@
                     success: function(response) {
                         // Xử lý kết quả trả về
                         if(response.status) {
-                            alert('thêm thành công')
+                            // alert('thêm thành công')
+                            var toastBody = myToast.querySelector('.toast-body');
+                            // Cập nhật nội dung mới
+                            toastBody.innerHTML = 'Thêm sản phẩm thành công';
+                            toast.show()
                             var x = parseInt($('.cart-count').text());
                             $('.cart-count').text(x + 1);
                         }
@@ -1230,7 +1250,10 @@
                     success: function(response) {
                         // Xử lý kết quả trả về
                         if(response.status) {
-                            alert('xóa thành công')
+                            var toastBody = myToast.querySelector('.toast-body');
+                            // Cập nhật nội dung mới
+                            toastBody.innerHTML = 'xóa thành công';
+                            toast.show()
                             // Lặp qua mỗi sản phẩm trong response.data
                             // Xóa tất cả các sản phẩm khỏi danh sách hiện có
                             $('.list-cart-checkout').empty();
@@ -1288,7 +1311,11 @@
                     success: function(response) {
                         // Xử lý kết quả trả về
                         if(response.status) {
-                            alert('xóa thành công')
+                            var toastBody = myToast.querySelector('.toast-body');
+                            // Cập nhật nội dung mới
+                            toastBody.innerHTML = 'xóa thành công';
+                            toast.show()
+                          
                         }
                     },
                     error: function(xhr, status, error) {
@@ -1369,19 +1396,34 @@
                 }
             });
         });
-        $('.category-checkbox').change(function() {
-            if ($(this).is(':checked')) {
-                $('#loading-overlay').show();
-                // Xác định id của danh mục được chọn
-                var categoryId = $(this).val();
+        var selectedCategories = [];
 
-                // Gửi yêu cầu AJAX để lấy sản phẩm tương ứng với danh mục đã chọn
+        $('.category-checkbox').change(function() {
+            // Lấy ID của danh mục được chọn
+            var categoryId = $(this).val();
+
+            // Kiểm tra xem checkbox đã được chọn hay không
+            if ($(this).is(':checked')) {
+                // Nếu được chọn, thêm ID vào mảng
+                selectedCategories.push(categoryId);
+            } else {
+                // Nếu không được chọn, loại bỏ ID khỏi mảng
+                var index = selectedCategories.indexOf(categoryId);
+                if (index !== -1) {
+                    selectedCategories.splice(index, 1);
+                }
+            }
+
+            // Thực hiện AJAX request nếu có ít nhất một danh mục được chọn
+
+                $('#loading-overlay').show();
                 $.ajax({
-                    type: 'GET',
-                    url: '/get-products-by-category/' + categoryId,
+                    type: 'POST', // Hoặc 'GET' tùy thuộc vào route của bạn
+                    url: '{{route("getProductByCategories")}}',
+                    data: { _token: '{{ csrf_token() }}',categories: selectedCategories},
                     success: function(data) {
-                        // Hiển thị danh sách sản phẩm trên giao diện
-                        let $productItem
+                         // Hiển thị danh sách sản phẩm trên giao diện
+                         let $productItem
                         $('#product-cate').empty(); // Xóa nội dung hiện tại của #product-cate
                         $('#loading-overlay').hide();
                         if(data.data.length > 0) {
@@ -1417,13 +1459,18 @@
                             $productItem = $('<div class="w-full text-2xl justify-center items-center flex p-3 mb-4"><span class="material-symbols-outlined">priority_high</span>Không có sản phẩm nào</div>')
                             $('#product-cate').append($productItem);
                         }
-                        
                     },
                     error: function() {
-                        alert('Đã xảy ra lỗi khi tải sản phẩm!');
+                        var toastBody = myToast.querySelector('.toast-body');
+                            // Cập nhật nội dung mới
+                            toastBody.innerHTML = 'Đã xảy ra lỗi khi tải sản phẩm!';
+                            toast.show()
+                
+                    },
+                    complete: function() {
+                        $('#loading-overlay').hide();
                     }
                 });
-            }
         });
         
     })

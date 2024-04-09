@@ -1,6 +1,6 @@
-<div class="flex h-screen">
+<div class="flex h-full">
     <!-- Sidebar -->
-    <div class="w-1/6 bg-gray-200">
+    <div class="w-1/6 bg-gray-200 show-sider-bar">
         <!-- Your sidebar content here -->
         <ul class="p-4">
             <li><a href="#" class="block py-2 px-4 hover:bg-gray-300">Link 1</a></li>
@@ -39,6 +39,9 @@
                     </svg>
                         Tạo sản phẩm
                     </button></p>
+                    
+                    <button id="btn-show-products" data-shop-id="{{$shop['id']}}">show sản phẩm</button>
+                    <div id="result-box-shop" class="flex items-center gap-2"></div>
             </div>
         </div>
     </div>

@@ -61,4 +61,5 @@ Route::get('/shop/show/{id}', [ShopsController::class, 'showShop'])->name('shops
 
 Route::get('/products', [ProductsController::class, 'index'])->name('product');
 Route::get('/searchProduct', [ProductsController::class, 'searchLiveProduct'])->name('searchProduct');
-Route::get('/get-products-by-category/{categoryId}', [ProductsController::class, 'show']);
+Route::post('/get-products-by-category', [ProductsController::class, 'show'])->name('getProductByCategories');
+Route::get('/get-products-by-shop/{shop_id}', [ProductsController::class, 'getProductsByShop'])->name('getProductsByShop');

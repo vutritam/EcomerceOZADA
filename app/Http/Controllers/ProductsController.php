@@ -91,15 +91,35 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($categoryId)
-    {
-        // Lấy danh sách sản phẩm có categories_id tương ứng
-        $products = products::where('category_id', $categoryId)->get();
 
-        // Trả về view hoặc dữ liệu JSON tùy thuộc vào cách bạn muốn xử lý
+    public function getProductsByShop($shop_id)
+    {
+        // Lấy danh sách sản phẩm có shop_id tương ứng
+        $products = products::where('shop_id', $shop_id)->get();
+
+        // Trả về danh sách sản phẩm dưới dạng JSON
         return response()->json(['message' => 'Successfully', 'data' => $products, 'status' => true]);
-        // return response()->json($products); // Nếu muốn trả về dữ liệu JSON
     }
+
+    public function show(Request $request)
+    {
+        // Lấy danh sách các category_id từ request
+        $categoryIds = $request->input('categories');
+
+        // Nếu mảng categoryIds rỗng, lấy tất cả sản phẩm
+        if (empty($categoryIds)) {
+            $products = products::all();
+        } else {
+            // Nếu không, lấy danh sách sản phẩm có categories_id tương ứng
+            $products = products::whereIn('category_id', $categoryIds)->get();
+        }
+
+        // Trả về dữ liệu JSON
+        return response()->json(['message' => 'Successfully', 'data' => $products, 'status' => true]);
+    }
+
+
+
     // show all product admin
     public function showListProducts()
     {

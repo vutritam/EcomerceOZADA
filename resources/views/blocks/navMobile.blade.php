@@ -19,7 +19,7 @@
                             </a>
                                <!-- Nội dung của offcanvas -->
                                <ul class="submenu">
-                                <li class="flex items-center gap-2">
+                                <li class="flex items-center gap-2 p-2">
                                     <div class="tnh-current-country relative" aria-describedby="popup-1">
                                         <div class="deliver-span hover:bg-blue-600">Deliver to:</div>
                                         <div class="tnh-country-flag flex items-center gap-2">
